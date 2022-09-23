@@ -1,0 +1,130 @@
+<root>
+    <scripts>
+        <include src="file://{resources}/layout/custom_game/five_cloud/public.js"></include>
+        <include src="file://{resources}/layout/custom_game/five_cloud/unitpick/index.js"></include>
+    </scripts>
+    <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+        <include src="file://{resources}/layout/custom_game/five_cloud/unitpick/index.css"></include>
+    </styles>
+    <Panel class="fiveCloud_unitpick minimized" hittest="false">
+        <Panel class="fiveCloud_selectUnitHead">
+            <Label class="fiveCloud_selectUnitHeadText" text="选择要创建的单位"></Label>
+        </Panel>
+        <Panel class="fiveCloud_selectUnitList">
+            <Panel class="fiveCloud_selectUnitCategory">
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_harpy_scout')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_harpy_scout_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_harpy_storm')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_harpy_storm_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_kobold')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_kobold_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_kobold_taskmaster')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_kobold_taskmaster_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_kobold_tunneler')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_kobold_tunneler_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_ghost')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_ghost_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_fel_beast')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_fel_beast_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_forest_troll_berserker')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_forest_troll_berserker_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_forest_troll_high_priest')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_forest_troll_high_priest_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_mud_golem')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_mud_golem_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_gnoll_assassin')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_gnoll_assassin_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_ogre_magi')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_ogre_magi_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_ogre_mauler')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_ogre_mauler_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_warpine_raider')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_warpine_raider_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_giant_wolf')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_giant_wolf_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_alpha_wolf')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_alpha_wolf_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_polar_furbolg_champion')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_polar_furbolg_champion_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_polar_furbolg_ursa_warrior')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_polar_furbolg_ursa_warrior_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_centaur_khan')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_centaur_khan_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_centaur_outrunner')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_centaur_outrunner_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_dark_troll')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_dark_troll_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_dark_troll_warlord')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_dark_troll_warlord_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_enraged_wildkin')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_enraged_wildkin_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_wildkin')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_wildkin_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_satyr_hellcaller')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_satyr_hellcaller_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_satyr_soulstealer')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_satyr_soulstealer_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_satyr_trickster')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_satyr_trickster_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_ice_shaman')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_ice_shaman_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_frostbitten_golem')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_frostbitten_golem_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_granite_golem')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_granite_golem_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_rock_golem')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_rock_golem_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_small_thunder_lizard')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_small_thunder_lizard_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_big_thunder_lizard')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_big_thunder_lizard_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_black_dragon')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_black_dragon_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_black_drake')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_black_drake_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_prowler_acolyte')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_prowler_acolyte_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+                <Panel class="fiveCloud_selectUnitCategoryImgPanel" onactivate="fiveCloud_createUnit('npc_dota_neutral_prowler_shaman')">
+                    <Image src="s2r://panorama/images/heroes/npc_dota_neutral_prowler_shaman_png.vtex" class="fiveCloud_selectUnitCategoryImg"></Image>
+                </Panel>
+            </Panel>
+        </Panel>
+    </Panel>
+</root>

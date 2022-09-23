@@ -1,0 +1,154 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/five_cloud/public.js"></include>
+		<include src="file://{resources}/layout/custom_game/five_cloud/entinfo/index.js"></include>
+	</scripts>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/layout/custom_game/five_cloud/public.css"></include>
+		<include src="file://{resources}/layout/custom_game/five_cloud/entinfo/index.css"></include>
+	</styles>
+	<snippets>
+		<snippet name="fiveCloud_entinfoAbilityExisting">
+			<Panel>
+				<DOTAAbilityImage class="fiveCloud_entinfoAbilityImg" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="fiveCloud_entinfo minimized" hittest="false">
+		<Panel class="fiveCloud_entinfoPanel">
+			<Panel class="fiveCloud_minimizeButton">
+				<Label text="#fiveCloud_entTextTitle"></Label>
+				<Button acceptsjoyfocus="true" onactivate="fiveCloud_entinfoClose()" />
+			</Panel>
+			<Panel class="fiveCloud_entinfoContent">
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#entId"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="entId"></Label>
+					</Panel>
+				</Panel>
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetUnitName"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetUnitName"></Label>
+					</Panel>
+				</Panel>
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetClassNameAsCStr"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetClassNameAsCStr"></Label>
+					</Panel>
+				</Panel>
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetAbsOrigin"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetAbsOrigin"></Label>
+					</Panel>
+				</Panel>
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetAbsOrigin2"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetAbsOrigin2"></Label>
+					</Panel>
+				</Panel>
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetDayTimeVisionRange"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetDayTimeVisionRange"></Label>
+					</Panel>
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetNightTimeVisionRange"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetNightTimeVisionRange"></Label>
+					</Panel>
+				</Panel>
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetBaseAttackTime"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetBaseAttackTime"></Label>
+					</Panel>
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetAttackSpeed"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetAttackSpeed"></Label>
+					</Panel>
+				</Panel>
+
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetAttacksPerSecond"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetAttacksPerSecond"></Label>
+					</Panel>
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetCastPoint"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetCastPoint"></Label>
+					</Panel>
+				</Panel>
+
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetAttackAnimationPoint"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetAttackAnimationPoint"></Label>
+					</Panel>
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetProjectileSpeed"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetProjectileSpeed"></Label>
+					</Panel>
+				</Panel>
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetPaddedCollisionRadius"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetPaddedCollisionRadius"></Label>
+					</Panel>
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetHullRadius"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetHullRadius"></Label>
+					</Panel>
+				</Panel>
+
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetIdealSpeed"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetIdealSpeed"></Label>
+					</Panel>
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetCooldownReduction"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetCooldownReduction"></Label>
+					</Panel>
+				</Panel>
+
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetDamage"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetDamage"></Label>
+					</Panel>
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetAverageTrueAttackDamage"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetAverageTrueAttackDamage"></Label>
+					</Panel>
+				</Panel>
+
+				<Panel class="fiveCloud_entinfoRow">
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetPhysicalArmorValue"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetPhysicalArmorValue"></Label>
+					</Panel>
+					<Panel class="fiveCloud_entinfoCow">
+						<Label class="fiveCloud_entinfoCowLeft" text="#GetMagicalArmorValue"></Label>
+						<Label class="fiveCloud_entinfoCowRight" text="-" id="GetMagicalArmorValue"></Label>
+					</Panel>
+				</Panel>
+
+				<Panel class="fiveCloud_entinfoAbilityExisting" id="fiveCloud_entinfoAbilityExisting"></Panel>
+
+				<Panel class="fiveCloud_entinfoModifers">
+					<Panel class="fiveCloud_entinfoRow">
+						<Label class="fiveCloud_entinfoCowModifers" text="Modifiers"></Label>
+					</Panel>
+					<Panel class="fiveCloud_entinfoModifersList" id="BuffList">
+					</Panel>
+				</Panel>
+
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

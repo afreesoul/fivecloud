@@ -1,0 +1,38 @@
+.fiveCloud_topMenu {
+  width: 450px;
+  height: 90px;
+  horizontal-align: left;
+  vertical-align: top;
+  margin-left: 140px;
+  flow-children: right;
+}
+
+.fiveCloud_topMenu_buttonBox {
+  width: 30px;
+  height: 100%;
+  margin-left: 20px;
+  background-position: center center;
+  flow-children: right;
+}
+
+.fiveCloud_tool {
+  width: 30px;
+  height: 30px;
+  margin-top: 13px;
+  background-image: url("file://{resources}/layout/custom_game/five_cloud/images/tool.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  tooltip-position: bottom;
+  tooltip-body-position: 50% 50%;
+  wash-color: #CDF;
+  opacity: 0.5;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  img-shadow: 0px 0px 3px 3 black;
+}
+
+.fiveCloud_tool:hover {
+  opacity: 1;
+  wash-color: #fff;
+}

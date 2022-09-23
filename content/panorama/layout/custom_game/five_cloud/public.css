@@ -1,0 +1,187 @@
+
+
+.fiveCloud_minimizeButton {
+    width: 100%;
+    background-color: #181818;
+    border: 2px solid #111111;
+}
+
+.fiveCloud_minimizeButton Label {
+    font-size: 18px;
+    color: #666666;
+    margin: 6px;
+}
+
+.fiveCloud_minimizeButton Button {
+    width: 24px;
+    height: 24px;
+    wash-color: #888888;
+    horizontal-align: right;
+    background-image: url("s2r://panorama/images/control_icons/x_close_grey_psd.vtex");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 4px;
+    transition-property: wash-color, pre-transform-scale2d, background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.fiveCloud_minimizeButton Button:hover {
+    wash-color: #fff;
+}
+
+.fiveCloud_row {
+    flow-children: right;
+    margin: 0;
+    width: 100%;
+}
+
+.fiveCloud_rowTitle {
+    flow-children: down;
+    horizontal-align: left;
+    margin: 5px;
+    font-size: 16px;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    min-width: 100%;
+}
+
+.fiveCloud_button {
+    background-color: #3e4144;
+    border: 1px solid #4e5155;
+    width: fill-parent-flow( 1.0);
+    transition-property: background-color, border, color;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    margin: 4px;
+    padding: 4px;
+}
+
+.fiveCloud_button:hover {
+    background-color: gradient( linear, 0% 0%, 70% 0%, from( #676b70), to( #3e4144));
+    border: 1px solid #686b70;
+}
+
+.fiveCloud_button Label {
+    horizontal-align: center;
+    vertical-align: middle;
+    color: #D8DADE;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: defaultFont;
+    font-weight: normal;
+    text-overflow: shrink;
+    letter-spacing: 1px;
+}
+
+.fiveCloud_button:hover Label {
+    color: #FFF;
+}
+
+.fiveCloud_button.green {
+    background-color: #42705B;
+    border: 1px solid #4e9e7a;
+    transition-property: background-color, border;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+}
+
+.fiveCloud_button.green:hover {
+    background-color: gradient( linear, 0% 0%, 70% 0%, from( #3cc486), to( #259c67));
+    border: 1px solid #3feb9d;
+}
+
+.fiveCloud_button.red {
+    background-color: #6D4A4E;
+    border: 1px solid #9b6369;
+    transition-property: background-color, border;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+}
+
+.fiveCloud_button.red:hover {
+    background-color: gradient( linear, 0% 0%, 70% 0%, from( #be4f5c), to( #913943));
+    border: 1px solid #eb5f70;
+}
+
+.fiveCloud_button.green {
+    background-color: #42705B;
+    border: 1px solid #4e9e7a;
+    transition-property: background-color, border;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+}
+
+.fiveCloud_button.green:hover {
+    background-color: gradient( linear, 0% 0%, 70% 0%, from( #3cc486), to( #259c67));
+    border: 1px solid #3feb9d;
+}
+
+.fiveCloud_button.blue {
+    background-color: #35495f;
+    border: 1px solid #4e78a1;
+    transition-property: background-color, border;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+}
+
+.fiveCloud_button.blue:hover {
+    background-color: gradient( linear, 0% 0%, 70% 0%, from( #3e87cf), to( #2765a7));
+    border: 1px solid #499bdf;
+}
+
+#CancelButton {
+    horizontal-align: right;
+    width: 14px;
+    height: 14px;
+}
+
+.tool_input {
+    border: 0px solid transparent;
+    width: 300px;
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    padding: 1px;
+    color: white;
+    font-size: 20px;
+    text-overflow: clip;
+    white-space: nowrap;
+}
+
+.inputContainer {
+    horizontal-align: center;
+    vertical-align: center;
+    border: 1px solid #fff;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .8);
+    flow-children: down;
+    visibility: collapse;
+}
+
+.tool_input_label {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tool_input:hover {
+    background-color: #000000ff;
+}
+
+.input_button {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #fff;
+    width: 80px;
+    margin-right: 10px;
+}
+
+.input_button_label {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}

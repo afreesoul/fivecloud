@@ -1,0 +1,64 @@
+
+.fiveCloud_unitpick {
+  margin-left: 460px;
+  flow-children: down;
+  width: 392px;
+  opacity: 1.0;
+  transform: translateX( 0px) translateY( -100px);
+  vertical-align: center;
+  background-color: #000c;
+  transition-property: opacity, transform;
+  transition-duration: 0.2s;
+}
+
+.fiveCloud_unitpick.minimized {
+  opacity: 0;
+  transform: translateX( -60px) translateY( -100px);
+}
+
+.fiveCloud_selectUnitHead {
+  flow-children: right;
+  width: 100%;
+  background-color: #242d39;
+  padding: 16px 16px 12px 16px;
+}
+
+.fiveCloud_selectUnitHeadText {
+  text-align: left;
+  text-overflow: shrink;
+  font-size: 22px;
+  color: #bfd2ee;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.fiveCloud_selectUnitList {
+  padding: 6px;
+  flow-children: down;
+  overflow: squish scroll;
+  width: 100%;
+}
+
+.fiveCloud_selectUnitCategory {
+  flow-children: right-wrap;
+}
+
+.fiveCloud_selectUnitCategoryImgPanel {
+  padding: 6px;
+}
+
+.fiveCloud_selectUnitCategoryImg {
+  width: 64px;
+  height: 36px;
+  border: 1px solid black;
+  saturation: 1;
+  opacity: 1;
+  transition-property: border, saturation;
+  transition-duration: 0.2s;
+}
+
+.fiveCloud_selectUnitCategoryImg:hover {
+  saturation: 1.2;
+  border: 1px solid #fff;
+}

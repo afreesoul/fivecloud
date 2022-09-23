@@ -1,0 +1,26 @@
+<root>
+    <scripts>
+        <include src="file://{resources}/layout/custom_game/five_cloud/public.js"></include>
+        <include src="file://{resources}/layout/custom_game/five_cloud/five_component/dialog/index.js" />
+        <include src="file://{resources}/layout/custom_game/five_cloud/main/index.js"></include>
+    </scripts>
+    <styles>
+        <include src="file://{resources}/layout/custom_game/five_cloud/main/index.css"></include>
+    </styles>
+
+    <Panel class="fiveCloud_root" hittest="false">
+        <Panel id="fiveCloud_topMenu"></Panel>
+        <Panel id="fiveCloud_toolContainer"></Panel>
+        <Panel id="fiveCloud_heropick"></Panel>
+        <Panel id="fiveCloud_unitpick"></Panel>
+        <Panel id="fiveCloud_entinfo"></Panel>
+        <Panel id="fiveCloud_entkv"></Panel>
+        <Panel class="fiveCloud_dialog" hittest="false">
+            <Panel id="fiveCloud_setGoldDialog"></Panel>
+            <Panel id="fiveCloud_moveToDialog"></Panel>
+            <Panel id="fiveCloud_setCameraDistanceDialog"></Panel>
+            <Panel id="fiveCloud_showRangeDialog"></Panel>
+            <Panel id="fiveCloud_hostTimescaleDialog"></Panel>
+        </Panel>
+    </Panel>
+</root>

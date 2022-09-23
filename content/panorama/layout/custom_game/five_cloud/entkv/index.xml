@@ -1,0 +1,22 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/five_cloud/public.js"></include>
+		<include src="file://{resources}/layout/custom_game/five_cloud/entkv/index.js"></include>
+	</scripts>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/layout/custom_game/five_cloud/public.css"></include>
+		<include src="file://{resources}/layout/custom_game/five_cloud/entkv/index.css"></include>
+	</styles>
+
+	<Panel class="fiveCloud_entkv minimized" hittest="false">
+		<Panel class="fiveCloud_entkvPanel">
+			<Panel class="fiveCloud_minimizeButton">
+				<Label text="#fiveCloud_showKV"></Label>
+				<Button acceptsjoyfocus="true" onactivate="fiveCloud_entkvClose()" />
+			</Panel>
+			<Panel class="fiveCloud_showKVContent" id="fiveCloud_showKVContent">
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

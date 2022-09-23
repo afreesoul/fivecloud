@@ -1,0 +1,211 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/layout/custom_game/five_cloud/public.css" />
+		<include src="file://{resources}/layout/custom_game/five_cloud/tool/index.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/layout/custom_game/five_cloud/public.js" />
+		<include src="file://{resources}/layout/custom_game/five_cloud/tool/index.js" />
+	</scripts>
+
+	<Panel class="fiveCloud_tool minimized" hittest="false">
+		<Panel class="fiveCloud_toolContainer">
+			<Panel class="fiveCloud_minimizeButton">
+				<Label text="#fiveCloud_toolTitle"></Label>
+				<Button acceptsjoyfocus="true" onactivate="fiveCloud_toolClose()" />
+			</Panel>
+			<Panel class="fiveCloud_category">
+				<Panel class="fiveCloud_row">
+					<Label class="fiveCloud_rowTitle" text="#fiveCloud_heroTitle" />
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_resetHero', {})">
+						<Label text="#fiveCloud_resetHero" />
+					</Button>
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_levelUp', {})">
+						<Label text="#fiveCloud_levelUp" />
+					</Button>
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" id="fiveCloud_maxLevelUp" onmouseover="FiveCloudShowDOTATooltip('fiveCloud_maxLevelUp', '#fiveCloud_maxLevelDescribe')" onmouseout="FiveCloudHideDOTATooltip()" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_maxLevelUp', {})">
+						<Label text="#fiveCloud_maxLevelUp" />
+					</Button>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Button class="fiveCloud_button blue" acceptsjoyfocus="true" onactivate="GameUI.FiveDialog.SetGoldDialog.open()">
+						<Label text="#fiveCloud_setGold" />
+					</Button>
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_clearInventory', {})">
+						<Label text="#fiveCloud_clearInventory" />
+					</Button>
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_respawnHero', {})">
+						<Label text="#fiveCloud_respawnHero" />
+					</Button>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Button class="fiveCloud_button green" acceptsjoyfocus="true" onactivate="fiveCloud_addHero(true)">
+						<Label text="#fiveCloud_addHeroTrue" />
+					</Button>
+					<Button class="fiveCloud_button red" acceptsjoyfocus="true" onactivate="fiveCloud_addHero(false)">
+						<Label text="#fiveCloud_addHeroFale" />
+					</Button>
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="fiveCloud_replaceHero()">
+						<Label text="#fiveCloud_replaceHero" />
+					</Button>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Button class="fiveCloud_button green" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_getAbilityPoint', {})">
+						<Label text="#fiveCloud_getAbilityPoint" />
+					</Button>
+					<Button class="fiveCloud_button red" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_removeAbilityPoint', {})">
+						<Label text="#fiveCloud_removeAbilityPoint" />
+					</Button>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Label class="fiveCloud_rowTitle" text="#fiveCloud_unitTitle" />
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<ToggleButton class="fiveCloud_button" acceptsjoyfocus="true" id="fiveCloud_entInfo" onactivate="fiveCloud_entInfo()">
+						<Label text="#fiveCloud_entInfo"></Label>
+					</ToggleButton>
+					<ToggleButton class="fiveCloud_button" acceptsjoyfocus="true" id="fiveCloud_showKV" onactivate="fiveCloud_showKV()">
+						<Label text="#fiveCloud_showKV" />
+					</ToggleButton>
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_refreshHero', {})">
+						<Label text="#fiveCloud_refreshHero" />
+					</Button>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_addDummyTarget', {})">
+						<Label text="#fiveCloud_addDummyTarget" />
+					</Button>
+					<Button class="fiveCloud_button green" acceptsjoyfocus="true" onactivate="fiveCloud_addUnit(true)">
+						<Label text="#fiveCloud_addUnitTrue" />
+					</Button>
+					<Button class="fiveCloud_button red" acceptsjoyfocus="true" onactivate="fiveCloud_addUnit(false)">
+						<Label text="#fiveCloud_addUnitFalse" />
+					</Button>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_selfMutilation', {})">
+						<Label text="#fiveCloud_selfMutilation"></Label>
+					</Button>
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="fiveCloud_moveToPoint()">
+						<Label text="#fiveCloud_moveToPoint" />
+					</Button>
+					<Button class="fiveCloud_button blue" acceptsjoyfocus="true" onactivate="GameUI.FiveDialog.MoveToDialog.open()">
+						<Label text="#fiveCloud_moveToCoordinate" />
+					</Button>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_removeUnit', {})">
+						<Label text="#fiveCloud_removeUnit" />
+					</Button>
+					<Button class="fiveCloud_button green" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_invulnerability', {checked: true})">
+						<Label text="#fiveCloud_addInvulnerability" />
+					</Button>
+					<Button class="fiveCloud_button red" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_invulnerability', {checked: false})">
+						<Label text="#fiveCloud_removeInvulnerability" />
+					</Button>
+				</Panel>
+
+				<Panel class="fiveCloud_row fiveCloud_runePanel">
+					<Label text="#fiveCloud_rune" class="fiveCloud_runeLabel" />
+					<Button acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent( 'fiveCloud_spawnRuneDoubleDamagePressed', {} )" onmouseover="MouseOverRune( &apos;RuneEmoticonDoubleDamage&apos;, &apos;#DOTA_HUD_Rune_DoubleDamage&apos; )" onmouseout="MouseOutRune( &apos;RuneEmoticonDoubleDamage&apos; )">
+						<DOTAEmoticon id="RuneEmoticonDoubleDamage" alias="doubledamage" animating="false" />
+					</Button>
+					<Panel class="FillWidth" />
+					<Button acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent( 'fiveCloud_spawnRuneHastePressed', {} )" onmouseover="MouseOverRune( &apos;RuneEmoticonHaste&apos;, &apos;#DOTA_HUD_Rune_Haste&apos; )" onmouseout="MouseOutRune( &apos;RuneEmoticonHaste&apos; )">
+						<DOTAEmoticon id="RuneEmoticonHaste" alias="haste" animating="false" />
+					</Button>
+					<Panel class="FillWidth" />
+					<Button acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent( 'fiveCloud_spawnRuneIllusionPressed', {}  )" onmouseover="MouseOverRune( &apos;RuneEmoticonIllusion&apos;, &apos;#DOTA_HUD_Rune_Illusion&apos; )" onmouseout="MouseOutRune( &apos;RuneEmoticonIllusion&apos; )">
+						<DOTAEmoticon id="RuneEmoticonIllusion" alias="illusion" animating="false" />
+					</Button>
+					<Panel class="FillWidth" />
+					<Button acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent( 'fiveCloud_spawnRuneInvisibilityPressed', {}  )" onmouseover="MouseOverRune( &apos;RuneEmoticonInvisibility&apos;, &apos;#DOTA_HUD_Rune_Invisibility&apos; )" onmouseout="MouseOutRune( &apos;RuneEmoticonInvisibility&apos; )">
+						<DOTAEmoticon id="RuneEmoticonInvisibility" alias="invisibility" animating="false" />
+					</Button>
+					<Panel class="FillWidth" />
+					<Button acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent( 'fiveCloud_spawnRuneRegenerationPressed', {}  )" onmouseover="MouseOverRune( &apos;RuneEmoticonRegeneration&apos;, &apos;#DOTA_HUD_Rune_Regeneration&apos; )" onmouseout="MouseOutRune( &apos;RuneEmoticonRegeneration&apos; )">
+						<DOTAEmoticon id="RuneEmoticonRegeneration" alias="regeneration" animating="false" />
+					</Button>
+					<Panel class="FillWidth" />
+					<Button acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent( 'fiveCloud_spawnRuneArcanePressed', {}  )" onmouseover="MouseOverRune( &apos;RuneEmoticonArcane&apos;, &apos;#DOTA_HUD_Rune_Arcane&apos; )" onmouseout="MouseOutRune( &apos;RuneEmoticonArcane&apos; )">
+						<DOTAEmoticon id="RuneEmoticonArcane" alias="arcane_rune" animating="false" />
+					</Button>
+				</Panel>
+
+				<Panel class="fiveCloud_row">
+					<Label class="fiveCloud_rowTitle" text="#fiveCloud_modelTitle" />
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Button class="fiveCloud_button blue" acceptsjoyfocus="true" onactivate="GameUI.FiveDialog.SetCameraDistanceDialog.open()">
+						<Label text="#fiveCloud_setCameraDistance" />
+					</Button>
+					<Button class="fiveCloud_button blue" acceptsjoyfocus="true" onactivate="GameUI.FiveDialog.HostTimescaleDialog.open()">
+						<Label text="#fiveCloud_hostTimescale" />
+					</Button>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_dayNightCycle', {})">
+						<Label text="#fiveCloud_dayNightCycle" />
+					</Button>
+					<ToggleButton class="fiveCloud_button" acceptsjoyfocus="true" id="fiveCloud_pauseDayNightCycle" onactivate="FiveCloudFireToggleEvent('fiveCloud_pauseDayNightCycle')">
+						<Label text="#fiveCloud_pauseDayNightCycle" />
+					</ToggleButton>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<ToggleButton class="fiveCloud_button" acceptsjoyfocus="true" id="fiveCloud_easyBuy" onactivate="FiveCloudFireToggleEvent('fiveCloud_easyBuy')">
+						<Label text="#fiveCloud_easyBuy" />
+					</ToggleButton>
+					<ToggleButton class="fiveCloud_button" acceptsjoyfocus="true" id="fiveCloud_freeSpells" onactivate="FiveCloudFireToggleEvent('fiveCloud_freeSpells')">
+						<Label text="#fiveCloud_freeSpells" />
+					</ToggleButton>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<ToggleButton class="fiveCloud_button" acceptsjoyfocus="true" id="fiveCloud_heroFastRespawn" onactivate="FiveCloudFireToggleEvent('fiveCloud_heroFastRespawn')">
+						<Label text="#fiveCloud_heroFastRespawn" />
+					</ToggleButton>
+					<ToggleButton class="fiveCloud_button" acceptsjoyfocus="true" id="fiveCloud_heroSituRespawn" onactivate="FiveCloudFireToggleEvent('fiveCloud_heroSituRespawn')">
+						<Label text="#fiveCloud_heroSituRespawn" />
+					</ToggleButton>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<ToggleButton class="fiveCloud_button" acceptsjoyfocus="true" id="fiveCloud_passiveGold" onactivate="FiveCloudFireToggleEvent('fiveCloud_passiveGold')">
+						<Label text="#fiveCloud_passiveGold"></Label>
+					</ToggleButton>
+					<ToggleButton class="fiveCloud_button" acceptsjoyfocus="true" id="fiveCloud_noFogOfWar" onmouseover="FiveCloudShowDOTATooltip('fiveCloud_noFogOfWar', '#fiveCloud_noFogOfWarDescribe')" onmouseout="FiveCloudHideDOTATooltip()" onactivate="FiveCloudFireToggleEvent('fiveCloud_noFogOfWar')">
+						<Label text="#fiveCloud_noFogOfWar" />
+					</ToggleButton>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Label class="fiveCloud_rowTitle" text="#fiveCloud_rangeTitle" />
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Button class="fiveCloud_button blue" acceptsjoyfocus="true" onactivate="GameUI.FiveDialog.ShowRangeDialog.open()">
+						<Label text="#fiveCloud_showRange" />
+					</Button>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Label class="fiveCloud_rowTitle" text="#fiveCloud_otherTitle" />
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="fiveCloud_dota_launch_custom_game()">
+						<Label text="#fiveCloud_dota_launch_custom_game" />
+					</Button>
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_sendToServerConsole', { command: 'script_reload '})">
+						<Label text="#fiveCloud_script_reload" />
+					</Button>
+					<Button class="fiveCloud_button" acceptsjoyfocus="true" onactivate="FiveCloudFireCustomGameEvent('fiveCloud_sendToServerConsole', { command: 'clear '})">
+						<Label text="#fiveCloud_clear" />
+					</Button>
+				</Panel>
+				<Panel class="fiveCloud_row">
+					<ToggleButton class="fiveCloud_button" acceptsjoyfocus="true" id="fiveCloud_cl_particle_log_creates" onactivate="FiveCloudFireToggleEvent('fiveCloud_cl_particle_log_creates')">
+						<Label text="#fiveCloud_cl_particle_log_creates" />
+					</ToggleButton>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

@@ -1,0 +1,15 @@
+<root>
+    <scripts>
+        <include src="file://{resources}/layout/custom_game/five_cloud/public.js"></include>
+        <include src="file://{resources}/layout/custom_game/five_cloud/topmenu/index.js"></include>
+    </scripts>
+    <styles>
+        <include src="file://{resources}/layout/custom_game/five_cloud/topmenu/index.css"></include>
+    </styles>
+
+    <Panel class="fiveCloud_topMenu" hittest="false">
+        <Panel class="fiveCloud_topMenu_buttonBox">
+            <Panel id="fiveCloud_tool" class="fiveCloud_tool" onmouseover="FiveCloudShowDOTATooltip('fiveCloud_tool', '#fiveCloud_toolText')" onmouseout="FiveCloudHideDOTATooltip()" onactivate="fiveCloud_toolToggle()"/>
+        </Panel>
+    </Panel>
+</root>

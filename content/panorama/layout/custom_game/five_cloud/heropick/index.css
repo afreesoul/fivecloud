@@ -1,0 +1,16 @@
+
+.fiveCloud_heropick {
+  vertical-align: middle;
+  margin-left: 460px;
+  flow-children: down;
+  opacity: 1.0;
+  transform: translateX( 0px) translateY( -80px);
+  background-color: #000c;
+  transition-property: opacity, transform;
+  transition-duration: 0.2s;
+}
+
+.fiveCloud_heropick.minimized {
+  opacity: 0;
+  transform: translateX( -60px) translateY( -80px);
+}

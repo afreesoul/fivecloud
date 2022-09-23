@@ -1,0 +1,12 @@
+<root>
+    <scripts>
+        <include src="file://{resources}/layout/custom_game/five_cloud/public.js"></include>
+        <include src="file://{resources}/layout/custom_game/five_cloud/heropick/index.js"></include>
+    </scripts>
+    <styles>
+        <include src="file://{resources}/layout/custom_game/five_cloud/heropick/index.css"></include>
+    </styles>
+    <Panel class="fiveCloud_heropick minimized" hittest="false">
+        <DOTAUIHeroPicker id="HeroPicker" />
+    </Panel>
+</root>

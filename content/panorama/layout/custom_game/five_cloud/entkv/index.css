@@ -1,0 +1,97 @@
+.fiveCloud_entkv {
+  transform: translateX( 0%) translateY( -50px);
+  vertical-align: middle;
+  horizontal-align: right;
+  opacity: 1;
+  transition-property: opacity, transform;
+  transition-duration: 0.35s;
+  transition-timing-function: ease-in-out;
+}
+
+.fiveCloud_entkv.minimized {
+  opacity: 0;
+  transform: translateX( 850px) translateY( -50px);
+}
+
+.fiveCloud_entkvPanel {
+  width: 850px;
+  max-height: 880px;
+  background-color: #181818dd;
+  border: 2px solid #222222;
+  box-shadow: #000000aa 0px 0px 8px 0px;
+  flow-children: down;
+}
+
+.fiveCloud_showKVContent {
+  flow-children: down;
+  width: 100%;
+  padding: 10px 10px 10px 4px;
+  overflow: squish scroll;
+}
+
+.fiveCloud_showKVObject {
+  width: 95%;
+  border: 1px solid #bbfbff;
+  flow-children: down;
+  horizontal-align: middle;
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.fiveCloud_showKVRow {
+  width: 100%;
+  font-size: 18px;
+  flow-children: right;
+  padding: 5px;
+}
+
+.fiveCloud_showKVCow {
+  width: fill-parent-flow( 1.0);
+  flow-children: right;
+}
+
+.fiveCloud_showKVCowLeft {
+  width: 270px;
+  margin-right: 20px;
+  text-align: right;
+  color: gradient( linear, 0% 0%, 100% 0%, from( #c0f8ff), color-stop(0.5, #bbfbff), to( #c0f8ff));
+  text-shadow: 0px 0px 16px 1.0 #3bb3ff22;
+}
+
+.fiveCloud_showKVCowRight {
+  color: #aaa;
+}
+
+.fiveCloud_showKVCowCenter {
+  width: 100%;
+  text-align: center;
+  color: gradient( linear, 0% 0%, 100% 0%, from( #c0f8ff), color-stop(0.5, #bbfbff), to( #c0f8ff));
+  text-shadow: 0px 0px 16px 1.0 #3bb3ff22;
+  margin: 10px;
+}
+
+.entTextPanelCowChildStart {
+  border: 1px solid #bbfbff;
+  padding: 4px;
+  border-bottom: 0px solid #bbfbff;
+  width: 100%;
+  horizontal-align: middle;
+}
+
+.entTextPanelCowChildStart.index1 {
+  width: 90%;
+}
+
+.entTextPanelCowChildEnd {
+  border: 1px solid #bbfbff;
+  padding: 4px;
+  border-top: 0px solid #bbfbff;
+  width: 100%;
+  horizontal-align: middle;
+  margin-bottom: 10px;
+}
+
+.entTextPanelCowChildEnd.index1 {
+  width: 90%;
+}
