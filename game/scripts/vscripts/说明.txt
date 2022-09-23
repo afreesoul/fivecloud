@@ -1,5 +1,0 @@
-可以在addon_game_mode.lua中引入
-require("five_cloud.index")
-
-然后在InitGameMode中初始化
-FiveCloudSDK:FiveCloudGameInit()

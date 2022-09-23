@@ -1,2 +1,0 @@
-需要在custom_ui_manifest.xml引入
-<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/five_cloud/main/index.xml" />
